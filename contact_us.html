@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Meestros</title>
+    <link rel="stylesheet" href="style3.css">
+
+    <link rel="icon" href="images/lg2.png" type="image/icon type">
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">Mahaveernagar Shirati</div>
+                    <div class="text-two">Shirol 416103</div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+91 8080660124</div>
+                    <div class="text-two">+91 9822642410</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">kc8781686@gmail.com</div>
+                    <div class="text-two">komal.chavan@walchandsangli.ac.in</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>If you have any work from me or any types of queries related to my tutorial, you can send me a message from here. It's my pleasure to help you.</p>
+                <form action="#" id="contactForm">
+                    <div class="input-box">
+                    
+                        <input type="text" placeholder="Enter your name" id="name">
+                        <span class="error" id="nameError">Name is required.</span>
+                        <br>
+                    </div>
+                    <div class="input-box">
+                        <br>
+                        <input type="text" placeholder="Enter your email" id="email">
+                        <span class="error" id="emailError">Please enter a valid email address.</span>
+                        <br>
+                    </div>
+                    <div class="input-box message-box">
+                        <br>
+                        <textarea placeholder="Enter your message" id="message"></textarea>
+                        <span class="error" id="messageError">Message is required.</span>
+                        
+                    </div>
+                    <div class="button">
+                        <button id="submitButton" type="button">Send Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const submitButton = document.getElementById('submitButton');
+    submitButton.addEventListener('click', validateForm);
+
+    function validateForm(event) {
+        event.preventDefault();
+
+        let isValid = true;
+
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+
+        const nameError = document.getElementById('nameError');
+        const emailError = document.getElementById('emailError');
+        const messageError = document.getElementById('messageError');
+
+        // Name validation
+        if (nameInput.value.trim() === '') {
+            nameError.style.display = 'block';
+            nameInput.classList.add('invalid');
+            isValid = false;
+        } else {
+            nameError.style.display = 'none';
+            nameInput.classList.remove('invalid');
+        }
+
+        // Email validation
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailInput.value.trim())) {
+            emailError.style.display = 'block';
+            emailInput.classList.add('invalid');
+            isValid = false;
+        } else {
+            emailError.style.display = 'none';
+            emailInput.classList.remove('invalid');
+        }
+
+        // Message validation
+        if (messageInput.value.trim() === '') {
+            messageError.style.display = 'block';
+            messageInput.classList.add('invalid');
+            isValid = false;
+        } else {
+            messageError.style.display = 'none';
+            messageInput.classList.remove('invalid');
+        }
+
+        if (isValid) {
+            alert('Form submitted successfully!');
+            // Uncomment the line below to actually submit the form
+            // document.getElementById('contactForm').submit();
+        }
+    }
+});
+
+    </script>
+</body>
+</html>
