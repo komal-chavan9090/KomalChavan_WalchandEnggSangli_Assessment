@@ -6,6 +6,7 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Craft Meestros</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-prefix.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
         <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
@@ -32,62 +33,36 @@
                
                 <img src="images/menu.png" class="menu-icon" onClick="menutoggle()" >
             </div>
-            <div class="row">
-                <div class="col-2">
-                   <h1>Embrace the
-                    spirit of India</h1>
-                    <p>An unparalleled legacy that spans millennia.  Pure, authentic craft sourced from artisans across the Indian sub-  continent. Our vast collection of over 80 different craft  forms celebrates a heritage of some of the world’s oldest  handicrafts.
-                </div>
-                <div class="col-2">
+         <center>
+            
+            <h1>Embrace the Spirit of India</h1>
+            <div class="row">    
+               <div class="col-2">
                     <!-- <img src="images/image1.png"> -->
 
-                    <div id="frame">
-                        <input type="radio" name="frame" id="frame1" checked />
-                        <input type="radio" name="frame" id="frame2" />
-                        <input type="radio" name="frame" id="frame3" />
-                        <input type="radio" name="frame" id="frame4" />
-                        <div id="slides">
-                            <div id="overflow">
-                                <div class="inner">
-                                    <div class="frame frame_1">
-                                        <div class="frame-content">
-                                            <img src="images/s1.jpeg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="frame frame_2">
-                                        <div class="frame-content">
-                                            <img src="images/s2.jpg" alt="">
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="frame frame_3">
-                                        <div class="frame-content">
-                                            <img src="images/s3.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="frame frame_4">
-                                        <div class="frame-content">
-                                            <img src="images/s4.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="slide-container">
+	
+                        <div class="slides">
+                            <img src="images/s2.jpg" class="active" id="t">
+                            <img src="images/s2.jpg" id="t">
+                            <img src="images/s5.jpg" id="t">
+                            <img src="images/s1.jpg" id="t">
+                            <img src="images/s4.jpg" id="t">
+                            
                         </div>
-                        <div id="controls">
-                            <label for="frame1"></label>
-                            <label for="frame2"></label>
-                            <label for="frame3"></label>
-                            <label for="frame4"></label>
+                    
+                        <div class="buttons">
+                            <span class="next">&#10095;</span>
+                            <span class="prev">&#10094;</span>
                         </div>
-                        <div id="bullets">
-                            <label for="frame1"></label>
-                            <label for="frame2"></label>
-                            <label for="frame3"></label>
-                            <label for="frame4"></label>
-                        </div>
+                    
+                        
+                    
                     </div>
                 </div>
             </div>
+        </center>   
+         
         </div>
     </div>
         
@@ -98,80 +73,215 @@
             
             
       
-        <center><h1>Featured Products</h1>
-   
-        
-     <div class="outer-wrapper">
-             <div class="wrapper">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <div class="carousel">
-              <img src="images/pr4.jpg" alt="img" draggable="false">
-              <img src="images/pr18.jpg" alt="img" draggable="false">
-              <img src="images/pr9.jpg" alt="img" draggable="false">
-              <img src="images/pr1.jpg" alt="img" draggable="false">
-              <img src="images/pr6.jpg" alt="img" draggable="false">
-              <img src="images/pr14.jpg" alt="img" draggable="false">
-              <img src="images/pr17.jpg" alt="img" draggable="false">
-              <img src="images/pr8.jpg" alt="img" draggable="false">
-              <img src="images/pr13.jpg" alt="img" draggable="false">
-            </div>
-            <i id="right" class="fa-solid fa-angle-right"></i>
-          </div>
-     </div>
-       </center>
-        
-        
-        <!------------------------------Testimonial---------------------------------->
-        <br><br>
-        <center><h1>Customer Reviews</h1></center>
-        <div class="testimonial">
-            <div class="small-container">
-                <div class="row">
-                    <div class="col-3">
-                        <i class="fa fa-quote-left" ></i>
-                        <p> I ordered a woven basket, a hand-painted vase, and a set of handcrafted coasters, all of which are beautifully made and unique. The vase's intricate designs and the coasters' delicate patterns showcase the artisans' skill. The packaging was secure and eco-friendly. </p>
-                      
-                        <div class="rating"> 
-                            <i class="fa fa-star" ></i>
-                            <i class="fa fa-star" ></i>
-                            <i class="fa fa-star" ></i>
-                            <i class="fa fa-star" ></i>
-                            <i class="fa fa-star-o" ></i>
-                        </div>
-                        <img src="images/user-1.png">
-                        <h3>Sana Mulani</h3>
-                    </div>
-                    <div class="col-3">
-                        <i class="fa fa-quote-left" ></i>
-                        <p> I ordered a woven basket, a hand-painted vase, and a set of handcrafted coasters, all of which are beautifully made and unique. The vase's intricate designs and the coasters' delicate patterns showcase the artisans' skill. The packaging was secure and eco-friendly. </p>
-                        <div class="rating">
-                            <i class="fa fa-star" ></i>
-                            <i class="fa fa-star" ></i>
-                            <i class="fa fa-star" ></i>
-                            <i class="fa fa-star" ></i>
-                            <i class="fa fa-star-o" ></i>
-                        </div>
-                        <img src="images/user-2.png">
-                        <h3>Vijay Mali</h3>
-                    </div>
-                    <div class="col-3">
-                        <i class="fa fa-quote-left" ></i>
-                        <p> I ordered a woven basket, a hand-painted vase, and a set of handcrafted coasters, all of which are beautifully made and unique. The vase's intricate designs and the coasters' delicate patterns showcase the artisans' skill. The packaging was secure and eco-friendly. </p>
-                        <div class="rating"> 
-                            <i class="fa fa-star" ></i>
-                            <i class="fa fa-star" ></i>
-                            <i class="fa fa-star" ></i>
-                            <i class="fa fa-star" ></i>
-                            <i class="fa fa-star-o" ></i>
-                        </div>
-                        <img src="images/user-3.png">
-                        <h3>Shriya Desai</h3>
-                    </div>
+
+
+    <div class="product-featured">
+        <h1 class="title">Featured Section</h1>
+
+        <div class="showcase-wrapper has-scrollbar">
+          <div class="showcase-container">
+            <div class="showcase">
+              <div class="showcase-banner">
+                <img
+                  src="images/pr4.jpg"
+                  class="showcase-img"
+                />
+              </div>
+
+              <div class="showcase-content">
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
                 </div>
+
+                <a href="#">
+                  <h2 class="showcase-title">
+                    Wall Hanging                        </h2>
+                </a>
+
+                <p class="showcase-desc">
+                    This exquisite piece of art is meticulously handcrafted with high-quality materials to bring a cozy and artistic vibe to any room. The wall hanging features intricate macramé patterns, adorned with delicate tassels and beads that create a perfect blend of bohemian and contemporary styles.
+                </p>
+
+                <div class="price-box">
+                  <p class="price">Rs.1500</p>
+
+                </div>
+
+                <button class="add-cart-btn">add to cart</button>
+
+                
+              </div>
             </div>
-        </div>
+          </div>
+
+          <div class="showcase-container">
+            <div class="showcase">
+              <div class="showcase-banner">
+                <img
+                  src="images/pr6.jpg"
+                
+                  class="showcase-img"
+                />
+              </div>
+
+              <div class="showcase-content">
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <h3 class="showcase-title">
+                  <a href="#" class="showcase-title"
+                    >Clay Mug(Hand Desinged)</a
+                  >
+                </h3>
+
+                <p class="showcase-desc">Holding approximately 12 ounces (350 ml), the mug is ergonomically designed with a comfortable handle and thick walls to retain heat. Each unique piece, created by skilled artisans, is microwave and dishwasher safe, though hand washing is recommended to preserve its beauty and longevity.
+                </p>
+
+                <div class="price-box">
+                  <p class="price">Rs.1990.00</p>
+                  
+                </div>
+
+                <button class="add-cart-btn">add to cart</button>
+
         
-        <!----------------------------------Brands------------------------------------>
+              
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-container">
+            <div class="showcase">
+              <div class="showcase-banner">
+                <img
+                  src="images/pr11.jpg"
+                  class="showcase-img"
+                />
+              </div>
+
+              <div class="showcase-content">
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <h3 class="showcase-title">
+                  <a href="#" class="showcase-title"
+                    > Micrame Wall Hanging</a
+                  >
+                </h3>
+
+                <p class="showcase-desc">
+                  This handmade macramé wall hanging piece brings a touch of bohemian elegance to any space. Crafted from high-quality, natural cotton rope, it features intricate knotting techniques that create a stunning, textured pattern. 
+                </p>
+
+                <div class="price-box">
+                  <p class="price">Rs.1990.00</p>
+                </div>
+
+                <button class="add-cart-btn">add to cart</button>
+
+        
+              
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-container">
+            <div class="showcase">
+              <div class="showcase-banner">
+                <img
+                  src="images/pr15.jpg"
+                  alt="clay  mug"
+                  class="showcase-img"
+                />
+              </div>
+
+              <div class="showcase-content">
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <h3 class="showcase-title">
+                  <a href="#" class="showcase-title"
+                    >Wooden Brush Holder</a
+                  >
+                </h3>
+
+                <p class="showcase-desc">
+                  This stylish wooden brush holder combines functionality with a touch of natural elegance, perfect for any desk or workspace. Crafted from high-quality, sustainably sourced wood, it features a sleek, smooth finish that highlights the rich, natural grain patterns. The holder is designed with multiple compartments of varying sizes, ideal for organizing pens, pencils, markers.
+                </p>
+
+                <div class="price-box">
+                  <p class="price">Rs.730.00</p>
+                </div>
+
+                <button class="add-cart-btn">add to cart</button>
+              
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-container">
+            <div class="showcase">
+              <div class="showcase-banner">
+                <img
+                  src="images/pr18.jpg"
+                  alt="clay  mug"
+                  class="showcase-img"
+                />
+              </div>
+
+              <div class="showcase-content">
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <h3 class="showcase-title">
+                  <a href="#" class="showcase-title"
+                    >Ganpati Bappa Show Piece </a
+                  >
+                </h3>
+
+                <p class="showcase-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga ipsum reiciendis quaerat inventore modi consequuntur tempora quo commodi necessitatibus fugit placeat delectus doloremque facilis pariatur quibusdam, quos ullam impedit!
+
+                </p>
+
+                <div class="price-box">
+                  <p class="price">Rs.1550.00</p>
+                </div>
+
+                <button class="add-cart-btn">add to cart</button>
+              
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+        
+        
       
         
         <!----------------------------------footer------------------------------------->
@@ -234,6 +344,88 @@
                     MenuItems.style.maxHeight="0px";
                 }
             }
+
+
+            
+	// Access the Images
+	let slideImages = document.querySelectorAll('#t');
+	// Access the next and prev buttons
+	let next = document.querySelector('.next');
+	let prev = document.querySelector('.prev');
+	// Access the indicators
+	let dots = document.querySelectorAll('.dot');
+
+	var counter = 0;
+
+	// Code for next button
+	next.addEventListener('click', slideNext);
+	function slideNext(){
+	slideImages[counter].style.animation = 'next1 0.1s ease-in forwards';
+	if(counter >= slideImages.length-1){
+		counter = 0;
+	}
+	else{
+		counter++;
+	}
+	slideImages[counter].style.animation = 'next2 0.4s ease-in forwards';
+	indicators();
+	}
+
+	// Code for prev button
+	prev.addEventListener('click', slidePrev);
+	function slidePrev(){
+	slideImages[counter].style.animation = 'prev1 0.4s ease-in forwards';
+	if(counter == 0){
+		counter = slideImages.length-1;
+	}
+	else{
+		counter--;
+	}
+	slideImages[counter].style.animation = 'prev2 0.3s ease-in forwards';
+	indicators();
+	}
+
+	// Auto slideing
+	function autoSliding(){
+		deletInterval = setInterval(timer, 3000);
+		function timer(){
+			slideNext();
+			indicators();
+		}
+	}
+	autoSliding();
+
+	// Stop auto sliding when mouse is over
+	const container = document.querySelector('.slide-container');
+	container.addEventListener('mouseover', function(){
+		clearInterval(deletInterval);
+	});
+
+	// Resume sliding when mouse is out
+	container.addEventListener('mouseout', autoSliding);
+
+	// Add and remove active class from the indicators
+	
+
+	// Add click event to the indicator
+	function switchImage(currentImage){
+		currentImage.classList.add('active');
+		var imageId = currentImage.getAttribute('attr');
+		if(imageId > counter){
+		slideImages[counter].style.animation = 'next1 0.3s ease-in forwards';
+		counter = imageId;
+		slideImages[counter].style.animation = 'next2 0.3s ease-in forwards';
+		}
+		else if(imageId == counter){
+			return;
+		}
+		else{
+		slideImages[counter].style.animation = 'prev1 0.3s ease-in forwards';
+		counter = imageId;
+		slideImages[counter].style.animation = 'prev2 0.3s ease-in forwards';	
+		}
+		indicators();
+	}
         </script>
     </body>
 </html>
