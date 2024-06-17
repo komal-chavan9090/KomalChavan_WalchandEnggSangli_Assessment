@@ -4,3 +4,11 @@
 <a href="https://komal-chavan9090.github.io/KomalChavan_WalchandEnggSangli_Assessment/"> https://komal-chavan9090.github.io/KomalChavan_WalchandEnggSangli_Assessment/ </a>
 <br>
 <p>Hope You Like it!!</p>
+
+## Installation
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/komal-chavan9090/KomalChavan_WalchandEnggSangli_Assessment.git
+
