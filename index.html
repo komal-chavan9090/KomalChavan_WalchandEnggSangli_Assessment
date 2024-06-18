@@ -35,7 +35,7 @@
             </div>
          <center>
             <br><br>
-          <center><h1>Embrace the Spirit of India</h1> </center>   
+          <center><h1 id="k">Embrace the Spirit of India</h1> </center>   
            
             <div class="row" id="row">   
            
@@ -114,8 +114,8 @@
                 </div>
 
                 <button class="add-cart-btn">add to cart</button>
+                <a href="prod.html" style="width:150px">View More</a>
 
-                
               </div>
             </div>
           </div>
@@ -154,7 +154,7 @@
                 </div>
 
                 <button class="add-cart-btn">add to cart</button>
-
+                <a href="prod.html" style="width:150px">View More</a>
         
               
               </div>
@@ -194,7 +194,7 @@
                 </div>
 
                 <button class="add-cart-btn">add to cart</button>
-
+                <a href="prod.html" style="width:150px">View More</a>
         
               
               </div>
@@ -235,7 +235,7 @@
                 </div>
 
                 <button class="add-cart-btn">add to cart</button>
-              
+                <a href="prod.html" style="width:150px">View More</a>
               </div>
             </div>
           </div>
@@ -275,7 +275,7 @@
                 </div>
 
                 <button class="add-cart-btn">add to cart</button>
-              
+                <a href="prod.html" style="width:150px">View More</a>
               </div>
             </div>
           </div>
@@ -338,14 +338,15 @@
         var MenuItems = document.getElementById("MenuItems");
 var row = document.getElementById("row");
 MenuItems.style.maxHeight="0px";
-// MenuItems.style.maxHeight = "0px";
+
 function menutoggle() {
     if (MenuItems.style.maxHeight === "0px" || MenuItems.style.maxHeight === "") {
         MenuItems.style.maxHeight = "200px";
-        // row.style.marginTop = "100px";  // Adjust this value as needed
+        // document.getElementById("k").style.display = "none";
+      
     } else {
         MenuItems.style.maxHeight = "0px";
-        // row.style.marginTop = "0px";
+        // document.getElementById("k").style.display = "none";
     }
 }
 
