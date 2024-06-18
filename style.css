@@ -382,55 +382,6 @@ small{
     color:#555;
 }
 
-/*-----------------------Testimonial -----------------------*/
-.testimonial{
-    padding-top: 100px;
-}
-.testimonial .col-3{
-    text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: transform 0.5s;
-}
-.testimonial .col-3 img{
-    width:50px;
-    margin-top: 20px;
-    border-radius: 50%;/*square images converted to round shape box*/
-}
-.testimonial .col-3:hover{
-    transform: translateY(-10px);
-}
-.fa.fa-quote-left{
-    font-size: 34px;
-    color: #f3b734;
-}
-.col-3 p{
-    font-size: 12px;
-    margin: 12px 0;
-    color: #777;
-}
-.testimonial .col-3 h3{
-    font-weight: 600;
-    color: #555;
-    font-size: 16px;
-}
-
-/*-----------------------Brands -----------------------*/
-.brands{
-    margin: 100px auto;
-}
-.col-5{
-    width: 100px;
-}
-.col-5 img{
-    width: 100%;
-    cursor: pointer;
-    filter: grayscale(100%);
-}
-.col-5 img:hover{
-    filter: grayscale(0);
-}
 
 
 /*-----------------------Footer -----------------------*/
@@ -500,8 +451,9 @@ ul{
 @media only screen and (max-width:800px){
     nav ul{
         position: absolute;
-        top:70px;
-        left: 0;
+        top:60px;
+        /* left: 0; */
+        right:0;
         background: #333;
         width: 100%;
         overflow: hidden;
@@ -510,17 +462,41 @@ ul{
     }
     nav ul li{
         display: block;
-        margin-right: 50px;
+        margin-right: 20px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
     nav ul li a{
-        color: #fff;
+        color: #000;
+        font-size: 13px;
+       
+    }
+
+    
+    .nav-links{
+        /* background:radial-gradient(#f7e2af,#fff); */
+        transition: max-height 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+        background-color: rgba(250, 247, 238, 0.1);
+        overflow: hidden;
+        height:120px;
+        width:140px;
+    }
+    .slide-container{
+        overflow: hidden;
     }
     .menu-icon{ 
         display:block;
+        /* height:100px; */
         cursor: pointer;
     }
+    .container h1{
+        font-size: 20px;
+    }
+    .logo img{
+        width:60px;
+        height:60px;
+    }
+
 }
 
 /*-----------------------media query for less than 600 screen size(mobile device) -----------------------*/
