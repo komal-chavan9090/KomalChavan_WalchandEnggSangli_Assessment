@@ -19,7 +19,7 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"><img src="images/lg2.png" width="130px"></a>
+                    <a href="index.html"><img src="images/lg2.png" width="130px" ></a>
                 </div>
                 <nav>
                     <ul id="MenuItems" class="nav-links">
@@ -34,9 +34,11 @@
                 <img src="images/menu.png" class="menu-icon" onClick="menutoggle()" >
             </div>
          <center>
-            
-            <h1>Embrace the Spirit of India</h1>
-            <div class="row">    
+            <br><br>
+          <center><h1>Embrace the Spirit of India</h1> </center>   
+           
+            <div class="row" id="row">   
+           
                <div class="col-2">
                     <!-- <img src="images/image1.png"> -->
 
@@ -333,17 +335,19 @@
         
         <!-----------------------------------js for toggle menu----------------------------------------------->
         <script>
-            var menuItems=document.getElementById("MenuItems");
-            
-            MenuItems.style.maxHeight="0px";
-            function menutoggle(){
-                if(MenuItems.style.maxHeight == "0px"){
-                    MenuItems.style.maxHeight="200px";
-                }
-                else{
-                    MenuItems.style.maxHeight="0px";
-                }
-            }
+        var MenuItems = document.getElementById("MenuItems");
+var row = document.getElementById("row");
+MenuItems.style.maxHeight="0px";
+// MenuItems.style.maxHeight = "0px";
+function menutoggle() {
+    if (MenuItems.style.maxHeight === "0px" || MenuItems.style.maxHeight === "") {
+        MenuItems.style.maxHeight = "200px";
+        // row.style.marginTop = "100px";  // Adjust this value as needed
+    } else {
+        MenuItems.style.maxHeight = "0px";
+        // row.style.marginTop = "0px";
+    }
+}
 
 
             
